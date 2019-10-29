@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+<meta  charset="utf-8">
+<meta name="description" content="Adding video and audio content in website">
+<meta name="author" content="Mark Cachia">
+<title>Adding a video and audio content</title>
+<style>
+
+h1{
+color: #ff3300;
+}
+
+h2{
+  color: blue;
+}
+p{
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<h1>Adding a video and audio content in a website</h1>
+
+<h2>Video</h2>
+<p>Below adding a video example:</p>
+<video controls width="400" height="400"
+       loop muted preload="auto"
+       poster="poster.png">
+       <source src="rabbit320.mp4" type="video/mp4">
+       <source src="rabbit320.webm" type="video/webm">
+  <p>Your browser doesn`t support HTML5 video. Here is a <a href="rabbit320.webm">link to the video instead</a></p>
+  </video>
+
+  <h2>Audio</h2>
+  <p>Below adding an audio example:</p>
+  <audio controls>
+    <source src="sampleFile.mp3" type="audio/mp3">
+    <source src="sampleFile.ogg" type="audio/ogg">
+    <p>Your browser doesn`t support HTML5 audio. Here is a <a href="sampleFile.mp3">link to the audio instead</a></p>
+  </audio>
+</body>
+</HTML>
