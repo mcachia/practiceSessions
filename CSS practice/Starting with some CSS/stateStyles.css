@@ -1,0 +1,29 @@
+/*  When we style a link we need to target the <a> (anchor) element.
+This has different states depending on whether it is unvisited, visited, being hovered over,
+focused via the keyboard, or in the process of being clicked (activated).
+The CSS below styles unvisited links pink and visited links green.*/
+
+a:link {
+  color: blue;
+  font-weight: bold;
+}
+
+a:visited {
+  color: green;
+}
+
+/*when the user hovers over it, for example removing the underline,
+which is achieved by in the next rule*/
+
+a:hover{
+  text-decoration: none;
+}
+
+/*Combining selectors and combinators
+You can combine multiple types together, too*/
+
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}

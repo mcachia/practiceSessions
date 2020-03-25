@@ -1,0 +1,44 @@
+h1 {
+  color: red;
+}
+
+p {
+    color: green;
+}
+
+li {
+  color: purple;
+}
+/* The below is if I decide I don't want those bullets I can remove them */
+li {
+  list-style-type: none;
+}
+/*you can target the class of special by creating a selector that starts with a full stop character.
+Add the following to your CSS file*/
+.special {
+  color: orange;
+  font-weight: bold;
+}
+/*This syntax means "target any li element that has a class of special".
+If you were to do this then you would no longer be able to apply the class to a <span> or another element by simply adding the class to it;
+you would have to add that element to the list of selectors: */
+li.special,
+span.special {
+  color: orange;
+  font-weight: bold;
+}
+/* Styling things based on their location in a document
+To select only an <em> that is nested inside an <li> element I can use a selector called the descendant combinator,
+which simply takes the form of a space between two other selectors.*/
+li em {
+  color: rebeccapurple;
+}
+/* Something else you might like to try is styling a paragraph when it comes directly after a heading at the same hierarchy level in the HTML.
+To do so place a +  (an adjacent sibling combinator) between the selectors.*/
+h1 + p {
+  font-size: 200%;
+}
+
+p span {
+color: red;
+}
