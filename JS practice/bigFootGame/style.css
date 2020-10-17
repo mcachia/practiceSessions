@@ -1,9 +1,10 @@
 body {
     background-image: url("images/forest.jpg");
+    object-fit: contain;
 }
 
 #bigfoot {
     position: absolute;
-    left: 90px;
-    top: 170px;
+    left: 219px;
+    top: 242px;
 }

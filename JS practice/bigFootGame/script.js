@@ -8,8 +8,8 @@ function moveBigFoot() {
     let getPicture = document.getElementById("bigfoot");
 
     // needs two numbers to generate for left & top
-    let x = Math.random() * 300;
-    let y = Math.random() * 300;
+    let x = Math.random() * 1000;
+    let y = Math.random() * 1000;
 
     //apply to picture & use top & left properties
     getPicture.style.top = x + "px";
